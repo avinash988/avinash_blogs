@@ -1,0 +1,7 @@
+Changes : 
+
+08-03-2018 (fixing bug + updation) - Purvesh - Emails and Emails(modules)
+****************************************************
+-> Itinerary date format Changed from Mar21 to 21Mar
+-> Itinerary table header font color changed to white to black
+-> client name readonly while removing mail in action mail

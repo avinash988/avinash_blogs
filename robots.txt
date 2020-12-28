@@ -1,0 +1,4 @@
+# robots.txt for http://crm.akbarholidays.com/
+
+User-agent: *
+Disallow: *

@@ -1,0 +1,77 @@
+#service_body ul {
+  list-style-type: none;
+}
+
+#service_body li {
+  display: inline-block;
+  text-align: center;
+}
+
+#service_body input[type="checkbox"][id^="serv"] {
+  display: none;
+}
+
+#service_body label {
+  border: 1px solid #ddd;
+  padding: 10px;
+  display: block;
+  position: relative;
+  margin: 10px;
+  cursor: pointer;
+}
+
+#service_body label:before {
+  background-color: white;
+  color: white;
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  border: 1px solid grey;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 28px;
+  transition-duration: 0.4s;
+  transform: scale(0);
+}
+
+#service_body label img {
+  height: 100px;
+  width: 100px;
+  transition-duration: 0.2s;
+  transform-origin: 50% 50%;
+}
+
+#service_body label i {
+   font-size: 40px;
+   color: gray;
+  transform: scale(1);
+  transition: transform 0.3s ease-out;
+  /* transition-duration: 0.2s; */
+}
+
+#service_body :checked + label {
+  border-color: #ddd;
+}
+
+#service_body :checked + label:before {
+  content: "✓";
+  background-color: grey;
+  transform: scale(1);
+}
+
+#service_body :checked + label img {
+  transform: scale(0.9);
+  /* box-shadow: 0 0 5px #333; */
+  z-index: -1;
+}
+
+#service_body :checked + label i {
+    color: #000;
+    /* font-size: 30px; */
+    transform: scale(1);
+  transition: transform 0.2s ease-out;
+}
